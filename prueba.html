@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/prueba.css">
+  <title>Login</title>
+</head>
+<body>
+  <div class="container">
+    <form id="loginForm">
+      <h2>Login</h2>
+      <label for="username">Username:</label>
+      <input type="text" id="username" required>
+      <label for="password">Password:</label>
+      <input type="password" id="password" required>
+      <button type="button" onclick="login()">Login</button>
+      <div class="google-login" onclick="googleLogin()">
+        <img src="google-icon.png" alt="Google Icon">
+        <span>Login with Google</span>
+      </div>
+      <!-- Puedes quitar el siguiente div si solo estás usando el botón personalizado de Google -->
+      <div id="googleSignInBtn">Iniciar sesión con Google</div>
+    </form>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="javascript/prueba.js"></script>
+</body>
+</html>

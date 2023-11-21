@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recordatorios</title>
+    <link rel="stylesheet" type="text/css" href="css/Reminder.css">
+</head>
+<body>
+    <h1>Recordatorios</h1>
+    <div id="reminder-form">
+        <label for="date">Fecha:</label>
+        <input type="date" id="date">
+        <label for="time">Hora:</label>
+        <input type="time" id="time">
+        <label for="message">Mensaje:</label>
+        <input type="text" id="message">
+        <button onclick="addReminder()">Agregar Recordatorio</button>
+    </div>
+    <div id="reminders">
+        <!-- Aquí se mostrarán los recordatorios como tarjetas -->
+    </div>
+    <button onclick="clearReminders()">Borrar Todos los Recordatorios</button>
+    <script src="javascript/Reminder.js"></script>
+</body>
+</html>
+
